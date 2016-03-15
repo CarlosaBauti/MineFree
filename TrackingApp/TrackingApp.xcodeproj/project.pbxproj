@@ -12,6 +12,7 @@
 		29F112C71C9881DD00F40A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F112C51C9881DD00F40A8E /* Main.storyboard */; };
 		29F112C91C9881DD00F40A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F112C81C9881DD00F40A8E /* Assets.xcassets */; };
 		29F112CC1C9881DD00F40A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F112CA1C9881DD00F40A8E /* LaunchScreen.storyboard */; };
+		C284279E8FDC49E08C973E54 /* libPods-TrackingApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAA1D12BDB6FFD7E8A26253 /* libPods-TrackingApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,10 @@
 		29F112C81C9881DD00F40A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29F112CB1C9881DD00F40A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29F112CD1C9881DD00F40A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F49AD51C98A03900E49B95 /* TrackingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrackingApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		9AAA1D12BDB6FFD7E8A26253 /* libPods-TrackingApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrackingApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDFD5B3B46C486E714F1F8DE /* Pods-TrackingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackingApp/Pods-TrackingApp.release.xcconfig"; sourceTree = "<group>"; };
+		DDAF391EDAAF031D6DE8AFFB /* Pods-TrackingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackingApp/Pods-TrackingApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C284279E8FDC49E08C973E54 /* libPods-TrackingApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,9 @@
 			children = (
 				29F112C01C9881DD00F40A8E /* TrackingApp */,
 				29F112BF1C9881DD00F40A8E /* Products */,
+				76D2F66A4D2E18B5072112DD /* Pods */,
+				8A01EF62CD3375AEB61A94D2 /* Frameworks */,
+				29F49AD51C98A03900E49B95 /* TrackingApp-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +73,23 @@
 			path = TrackingApp;
 			sourceTree = "<group>";
 		};
+		76D2F66A4D2E18B5072112DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF391EDAAF031D6DE8AFFB /* Pods-TrackingApp.debug.xcconfig */,
+				BDFD5B3B46C486E714F1F8DE /* Pods-TrackingApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A01EF62CD3375AEB61A94D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AAA1D12BDB6FFD7E8A26253 /* libPods-TrackingApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29F112D01C9881DD00F40A8E /* Build configuration list for PBXNativeTarget "TrackingApp" */;
 			buildPhases = (
+				29F8C0FD847F78FC5B41045A /* 📦 Check Pods Manifest.lock */,
 				29F112BA1C9881DD00F40A8E /* Sources */,
 				29F112BB1C9881DD00F40A8E /* Frameworks */,
 				29F112BC1C9881DD00F40A8E /* Resources */,
+				6488C5436C71995EDD3E0D65 /* 📦 Embed Pods Frameworks */,
+				AAE2752B46EEBD29ADA41BE7 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29F8C0FD847F78FC5B41045A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6488C5436C71995EDD3E0D65 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackingApp/Pods-TrackingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAE2752B46EEBD29ADA41BE7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackingApp/Pods-TrackingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29F112BA1C9881DD00F40A8E /* Sources */ = {
@@ -246,23 +323,30 @@
 		};
 		29F112D11C9881DD00F40A8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDAF391EDAAF031D6DE8AFFB /* Pods-TrackingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TrackingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesign.TrackingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrackingApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		29F112D21C9881DD00F40A8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDFD5B3B46C486E714F1F8DE /* Pods-TrackingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TrackingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesign.TrackingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrackingApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -285,6 +369,7 @@
 				29F112D21C9881DD00F40A8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
