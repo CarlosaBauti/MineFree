@@ -8,8 +8,8 @@
 
 ### User Stories
 
-| User Story | Comments |
-|:---------- |:-------- |
+| User Story | Description |
+|:---------- |:----------- |
 | User can choose a destination.      | User taps text field to input destination.    |
 | User can reveal known mines.        | Slide up menu allows display of known mines.       |
 | User can specify mode of travel. | Walking, bicycle or horse.                       |
