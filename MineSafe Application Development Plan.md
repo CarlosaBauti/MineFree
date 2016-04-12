@@ -15,3 +15,10 @@
 | User can specify mode of travel. | Walking, bicycle or horse.                       |
 | User can start navigation.  | Press start arrow on map to begin navigation.         |
 | User can track progress of trip. | User's progress tracked on defined path. |
+
+### Required Modules
+
+| Required Module | Purpose |
+|:--------------- |:------- |
+| **MinePathViewController.swift** | Controls presentation of opening view to choose destination. |
+| 
