@@ -10,11 +10,10 @@
 
 | User Story | Description |
 |:---------- |:----------- |
-| User can choose a destination.      | User taps text field to input destination.    |
-| User can reveal known mines.        | Slide up menu allows display of known mines.       |
-| User can specify mode of travel. | Walking, bicycle or horse.                       |
-| User can start navigation.  | Press start arrow on map to begin navigation.         |
-| User can track progress of trip. | User's progress tracked on defined path. |
+| User can choose a destination.      | Load map view; add search text field; display user's current location.    |
+| User can reveal danger zones.        | Add slide-up menu; provide button to reveal danger zones.   |
+| User can specify mode of travel. | Calculate times; define the safest path for each mode (walking, bike, horse); get data from database for display.                        |
+| User can start navigation.  | Determine reference points to display on the next steps according to user's position on map.         |
 
 ### Required Modules
 
