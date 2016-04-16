@@ -1,6 +1,6 @@
 # MineSafe Application Development Plan
 
-## Team: Carlos Bautista Asiza and Robert Hieger
+## Team: Carlos Bautista Isaza and Robert Hieger
 
 ### Project Concept Sketches:
 
@@ -10,7 +10,6 @@
 
 | User Story | Description |
 |:---------- |:----------- |
-| User can start navigation.  | Determine reference points to display on the next steps according to user's position on map. |
 | As a user, I can choose a destination. | Load map showing user's current location. Provide auto-complete based on previous interactions.  |
 | As a user, I can navigate to my destination. | Provide guidance and orientation to user as she or he walks; emit warning signal if user is getting too close to danger zone. |
 | As a user, I can see my path. | Show user path from position of origin to destination. |
