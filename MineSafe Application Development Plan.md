@@ -1,6 +1,6 @@
 # MineSafe Application Development Plan
 
-## Team: Carlos Bautista Isaza and Robert Hieger
+## Team: Carlos Bautista Asiza and Robert Hieger
 
 ### Project Concept Sketches:
 
