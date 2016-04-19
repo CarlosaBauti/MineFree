@@ -117,7 +117,7 @@
 				TargetAttributes = {
 					294B27F91C98D73800CF4994 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = T3FWTH524Q;
+						DevelopmentTeam = HYA97Z2546;
 					};
 				};
 			};
@@ -277,7 +277,7 @@
 				);
 				INFOPLIST_FILE = FirstMapBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesign.FirstMapBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesign.MineSafe;
 				PRODUCT_NAME = MineSafe;
 				PROVISIONING_PROFILE = "";
 			};
@@ -295,7 +295,7 @@
 				);
 				INFOPLIST_FILE = FirstMapBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesign.FirstMapBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesign.MineSafe;
 				PRODUCT_NAME = MineSafe;
 				PROVISIONING_PROFILE = "";
 			};

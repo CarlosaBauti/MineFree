@@ -24,6 +24,7 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pdA-hx-z0l" secondAttribute="trailing" id="Euq-We-4oM"/>
                             <constraint firstItem="pdA-hx-z0l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="F6r-bb-XO1"/>
@@ -44,9 +45,11 @@
                         </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="delegate" destination="BYZ-38-t0r" id="492-xh-Viw"/>
+                            <outletCollection property="gestureRecognizers" destination="TWG-TU-Chp" appends="YES" id="5c7-rd-AvX"/>
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="destinationText" destination="pdA-hx-z0l" id="Axf-5e-5wt"/>
                         <outlet property="mapView" destination="8bC-Xf-vdC" id="Q3w-Wj-PY8"/>
                         <outlet property="searchDisplayController" destination="FhR-OG-6MU" id="yBd-y7-cG2"/>
                     </connections>
@@ -60,6 +63,11 @@
                         <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="30v-II-A2i"/>
                     </connections>
                 </searchDisplayController>
+                <tapGestureRecognizer id="TWG-TU-Chp">
+                    <connections>
+                        <action selector="vanishKeyboard:" destination="BYZ-38-t0r" id="D7M-4N-jQ0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="435" y="357"/>
         </scene>
