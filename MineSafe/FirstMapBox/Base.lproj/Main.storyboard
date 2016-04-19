@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Delegate-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MinePathViewController" customModule="MineSafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MGLMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="select destination" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-hx-z0l">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.035294117649999998" green="0.57647058819999997" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pdA-hx-z0l" secondAttribute="trailing" id="Euq-We-4oM"/>
+                            <constraint firstItem="pdA-hx-z0l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="F6r-bb-XO1"/>
+                            <constraint firstItem="pdA-hx-z0l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="edy-3m-4i0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="latitude">
+                                <real key="value" value="40.693364000000003"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="longitude">
+                                <real key="value" value="-73.985714999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="zoomLevel">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/carlosabauti/cim3t357y00e49jkpglsimplj"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="BYZ-38-t0r" id="492-xh-Viw"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="8bC-Xf-vdC" id="Q3w-Wj-PY8"/>
+                        <outlet property="searchDisplayController" destination="FhR-OG-6MU" id="yBd-y7-cG2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="FhR-OG-6MU">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="bt0-kX-skF"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="Dsg-pI-cpN"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="2vX-r5-EA4"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="30v-II-A2i"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="435" y="357"/>
+        </scene>
+    </scenes>
+</document>
