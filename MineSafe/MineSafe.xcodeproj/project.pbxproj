@@ -17,6 +17,7 @@
 		C507E6411CC6F1DA00E47BA2 /* DestinationSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507E6401CC6F1DA00E47BA2 /* DestinationSearchBarViewController.swift */; };
 		C51BB5061CCD868B002D7FBA /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51BB5051CCD868B002D7FBA /* Destination.swift */; };
 		C51BB5341CD053D3002D7FBA /* DestinationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51BB5331CD053D3002D7FBA /* DestinationTableViewController.swift */; };
+		C51F03841CD290B100F6FCE0 /* DestinationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F03831CD290B100F6FCE0 /* DestinationItem.swift */; };
 		C5D2802E1CCABB5B003E3EDD /* MapboxDirections in Resources */ = {isa = PBXBuildFile; fileRef = C5D2802D1CCABB5B003E3EDD /* MapboxDirections */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		C507E6401CC6F1DA00E47BA2 /* DestinationSearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationSearchBarViewController.swift; sourceTree = "<group>"; };
 		C51BB5051CCD868B002D7FBA /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		C51BB5331CD053D3002D7FBA /* DestinationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationTableViewController.swift; sourceTree = "<group>"; };
+		C51F03831CD290B100F6FCE0 /* DestinationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationItem.swift; sourceTree = "<group>"; };
 		C5D2802D1CCABB5B003E3EDD /* MapboxDirections */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MapboxDirections; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				294B27FF1C98D73800CF4994 /* MinePathViewController.swift */,
 				C507E6401CC6F1DA00E47BA2 /* DestinationSearchBarViewController.swift */,
 				C51BB5051CCD868B002D7FBA /* Destination.swift */,
+				C51F03831CD290B100F6FCE0 /* DestinationItem.swift */,
 				C51BB5331CD053D3002D7FBA /* DestinationTableViewController.swift */,
 				294B28011C98D73800CF4994 /* Main.storyboard */,
 				294B28041C98D73800CF4994 /* Assets.xcassets */,
@@ -175,6 +178,7 @@
 				C51BB5061CCD868B002D7FBA /* Destination.swift in Sources */,
 				294B27FE1C98D73800CF4994 /* AppDelegate.swift in Sources */,
 				C51BB5341CD053D3002D7FBA /* DestinationTableViewController.swift in Sources */,
+				C51F03841CD290B100F6FCE0 /* DestinationItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
