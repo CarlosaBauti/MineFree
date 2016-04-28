@@ -97,4 +97,9 @@ class MinePathViewController: UIViewController {
         
     }   // end mapView(...)
     
+    
+    // MARK: - Methods
+    
+    
+    
 }   // end MinPathViewController: UIViewController

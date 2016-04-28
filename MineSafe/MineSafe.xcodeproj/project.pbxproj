@@ -15,6 +15,9 @@
 		294B28101C98D9DD00CF4994 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294B280F1C98D9DD00CF4994 /* Mapbox.framework */; };
 		294B28111C98D9DD00CF4994 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 294B280F1C98D9DD00CF4994 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C507E6411CC6F1DA00E47BA2 /* DestinationSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507E6401CC6F1DA00E47BA2 /* DestinationSearchBarViewController.swift */; };
+		C51BB5061CCD868B002D7FBA /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51BB5051CCD868B002D7FBA /* Destination.swift */; };
+		C51BB5341CD053D3002D7FBA /* DestinationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51BB5331CD053D3002D7FBA /* DestinationTableViewController.swift */; };
+		C5D2802E1CCABB5B003E3EDD /* MapboxDirections in Resources */ = {isa = PBXBuildFile; fileRef = C5D2802D1CCABB5B003E3EDD /* MapboxDirections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +44,9 @@
 		294B28091C98D73800CF4994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		294B280F1C98D9DD00CF4994 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		C507E6401CC6F1DA00E47BA2 /* DestinationSearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationSearchBarViewController.swift; sourceTree = "<group>"; };
+		C51BB5051CCD868B002D7FBA /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		C51BB5331CD053D3002D7FBA /* DestinationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationTableViewController.swift; sourceTree = "<group>"; };
+		C5D2802D1CCABB5B003E3EDD /* MapboxDirections */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MapboxDirections; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				294B280F1C98D9DD00CF4994 /* Mapbox.framework */,
+				C5D2802D1CCABB5B003E3EDD /* MapboxDirections */,
 				294B27FC1C98D73800CF4994 /* MineSafe */,
 				294B27FB1C98D73800CF4994 /* Products */,
 			);
@@ -78,6 +85,8 @@
 				294B27FD1C98D73800CF4994 /* AppDelegate.swift */,
 				294B27FF1C98D73800CF4994 /* MinePathViewController.swift */,
 				C507E6401CC6F1DA00E47BA2 /* DestinationSearchBarViewController.swift */,
+				C51BB5051CCD868B002D7FBA /* Destination.swift */,
+				C51BB5331CD053D3002D7FBA /* DestinationTableViewController.swift */,
 				294B28011C98D73800CF4994 /* Main.storyboard */,
 				294B28041C98D73800CF4994 /* Assets.xcassets */,
 				294B28061C98D73800CF4994 /* LaunchScreen.storyboard */,
@@ -150,6 +159,7 @@
 				294B28081C98D73800CF4994 /* LaunchScreen.storyboard in Resources */,
 				294B28051C98D73800CF4994 /* Assets.xcassets in Resources */,
 				294B28031C98D73800CF4994 /* Main.storyboard in Resources */,
+				C5D2802E1CCABB5B003E3EDD /* MapboxDirections in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +172,9 @@
 			files = (
 				294B28001C98D73800CF4994 /* MinePathViewController.swift in Sources */,
 				C507E6411CC6F1DA00E47BA2 /* DestinationSearchBarViewController.swift in Sources */,
+				C51BB5061CCD868B002D7FBA /* Destination.swift in Sources */,
 				294B27FE1C98D73800CF4994 /* AppDelegate.swift in Sources */,
+				C51BB5341CD053D3002D7FBA /* DestinationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
