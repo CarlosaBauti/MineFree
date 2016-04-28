@@ -97,6 +97,13 @@ class MinePathViewController: UIViewController {
         
     }   // end mapView(...)
     
+    func mapView(mapView: MGLMapView!, didUpdateUserLocation
+        userLocation: MGLUserLocation!) {
+        mapView.centerCoordinate = userLocation.location!.coordinate
+    }
+    
+    //This function updates the user position using a delegate and identifies the center coordinate based on the user position
+    
     
     // MARK: - Methods
     
