@@ -59,4 +59,18 @@ class Destination   {
         
     ]   // end safeDestination
     
+//    let allDestinations = [DestinationItem]()
+//    
+//
+//    // MARK: - Methods
+//    
+//    func createDestination() -> DestinationItem    {
+//        
+//        
+//        var destItem = DestinationItem
+//        
+//        
+//        
+//    }   // end createDestinations()
+    
 }   // end Destination

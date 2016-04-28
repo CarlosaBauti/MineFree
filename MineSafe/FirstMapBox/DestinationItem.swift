@@ -29,7 +29,8 @@ class DestinationItem: NSObject   {
     
     // MARK: - Properties
     
-        var destName: String
+    var destTitle: String = "Prospect Park"
+    var destName: String
     
     
     // MARK: - Designated Initializer

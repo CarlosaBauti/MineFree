@@ -31,6 +31,13 @@ import UIKit
 class DestinationTableViewController: UITableViewController {
     
     
+    // MARK: - Properties
+    
+    var destination: Destination!
+    
+    
+    // MARK: - IBOutlets
+    
     @IBOutlet var destinationTableView: UITableView!
     
 }   // end DestinationTableViewController

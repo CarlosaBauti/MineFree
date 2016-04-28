@@ -16,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Create a Destination Object:
+        
+        let destination = Destination()
+        
+        // Access DestinationTableViewController and set its
+        // data store to Destination.
+        
+        let destinationItemController = window!.rootViewController
+            as! DestinationTableViewController
+        
+        destinationItemController.destination = destination
+        
         return true
     }
 
