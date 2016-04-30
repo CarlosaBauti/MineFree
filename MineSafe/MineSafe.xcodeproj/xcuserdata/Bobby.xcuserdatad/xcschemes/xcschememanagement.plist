@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FirstMapBox.xcscheme</key>
+		<key>MineSafe.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>294B27F91C98D73800CF4994</key>
+		<key>C520568C1CD45DFA0015A465</key>
 		<dict>
 			<key>primary</key>
 			<true/>
