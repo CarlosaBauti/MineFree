@@ -62,12 +62,6 @@ class DestinationTableViewControler: UITableViewController {
         
         super.viewDidLoad()
         
-        // Create constraint to push table view down and
-        // away from status bar.
-        
-        self.tableView.contentInset =
-            UIEdgeInsetsMake(25, 0, 0, 0)
-        
     }   // end videDidLoad()
     
     override func tableView(tableView: UITableView,
