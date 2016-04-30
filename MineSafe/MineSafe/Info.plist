@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoicmxoaWVnZXIiLCJhIjoiY2ltcncyaXV5MDE3YXVwa2tua2k1bjBlbyJ9.v4yjvkyoydWCVePNvBa9vA</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -21,9 +19,11 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoicmxoaWVnZXIiLCJhIjoiY2ltcncyaXV5MDE3YXVwa2tua2k1bjBlbyJ9.v4yjvkyoydWCVePNvBa9vA</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

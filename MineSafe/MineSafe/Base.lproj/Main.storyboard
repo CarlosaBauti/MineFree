@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Destination Table View Controler-->
         <scene sceneID="rlL-2L-PgT">
             <objects>
-                <tableViewController id="CHT-UT-37l" sceneMemberID="viewController">
+                <tableViewController id="CHT-UT-37l" customClass="DestinationTableViewControler" customModule="MineSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="lHw-Ji-ir1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,9 @@
                             <outlet property="delegate" destination="CHT-UT-37l" id="GTz-jg-5Om"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="destinationTableView" destination="lHw-Ji-ir1" id="iTg-hs-5hN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAu-Ui-tI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
