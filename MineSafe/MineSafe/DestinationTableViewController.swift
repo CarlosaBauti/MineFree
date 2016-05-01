@@ -62,6 +62,24 @@ class DestinationTableViewControler: UITableViewController {
         
         super.viewDidLoad()
         
+        // Customize navigation bar title text.
+        
+        let navBar = navigationController?.navigationBar
+        
+        // Specify attributes.
+        
+        let navBarTitleAttributes =
+        [
+            NSFontAttributeName: UIFont(name: "Optima-Bold",
+                size: 24)!,
+            NSForegroundColorAttributeName:
+            UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        ]
+        
+        // Apply specified attributes.
+        
+        navBar?.titleTextAttributes = navBarTitleAttributes
+        
     }   // end videDidLoad()
     
     override func tableView(tableView: UITableView,
@@ -75,7 +93,7 @@ class DestinationTableViewControler: UITableViewController {
     override func tableView(tableView: UITableView,
               titleForHeaderInSection section: Int)  -> String? {
      
-        return "choose your destination:"
+        return "Choose your destination:"
         
     }   // tableView(_:numberOfRowInSection)
     
@@ -86,6 +104,11 @@ class DestinationTableViewControler: UITableViewController {
         
         let destCell =
         tableView.dequeueReusableCellWithIdentifier("destinationCell")
+        
+        // Add Disclosure Indicator arrow to each table cell.
+        
+        destCell?.accessoryType =
+        UITableViewCellAccessoryType.DisclosureIndicator
         
         // Configure table cell.
         
