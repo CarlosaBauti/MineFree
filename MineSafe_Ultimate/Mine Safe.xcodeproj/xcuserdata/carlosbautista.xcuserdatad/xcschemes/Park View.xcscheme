@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07866AAD165EE2B400D7BB3A"
-               BuildableName = "Park View.app"
-               BlueprintName = "Park View"
-               ReferencedContainer = "container:Park View.xcodeproj">
+               BuildableName = "Mine Safe.app"
+               BlueprintName = "Mine Safe"
+               ReferencedContainer = "container:Mine Safe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07866AAD165EE2B400D7BB3A"
-            BuildableName = "Park View.app"
-            BlueprintName = "Park View"
-            ReferencedContainer = "container:Park View.xcodeproj">
+            BuildableName = "Mine Safe.app"
+            BlueprintName = "Mine Safe"
+            ReferencedContainer = "container:Mine Safe.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07866AAD165EE2B400D7BB3A"
-            BuildableName = "Park View.app"
-            BlueprintName = "Park View"
-            ReferencedContainer = "container:Park View.xcodeproj">
+            BuildableName = "Mine Safe.app"
+            BlueprintName = "Mine Safe"
+            ReferencedContainer = "container:Mine Safe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07866AAD165EE2B400D7BB3A"
-            BuildableName = "Park View.app"
-            BlueprintName = "Park View"
-            ReferencedContainer = "container:Park View.xcodeproj">
+            BuildableName = "Mine Safe.app"
+            BlueprintName = "Mine Safe"
+            ReferencedContainer = "container:Mine Safe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

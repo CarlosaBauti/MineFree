@@ -23,13 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07866AAE165EE2B400D7BB3A /* Park View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Park View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07866AAE165EE2B400D7BB3A /* Mine Safe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mine Safe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07866AB2165EE2B400D7BB3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07866AB4165EE2B400D7BB3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07866AB6165EE2B400D7BB3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		07866ABA165EE2B400D7BB3A /* Park View-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Park View-Info.plist"; sourceTree = "<group>"; };
+		07866ABA165EE2B400D7BB3A /* Mine Safe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mine Safe-Info.plist"; sourceTree = "<group>"; };
 		07866ABC165EE2B400D7BB3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		07866AC0165EE2B400D7BB3A /* Park View-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Park View-Prefix.pch"; sourceTree = "<group>"; };
+		07866AC0165EE2B400D7BB3A /* Mine Safe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mine Safe-Prefix.pch"; sourceTree = "<group>"; };
 		07866AC4165EE2B400D7BB3A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		07866AC6165EE2B400D7BB3A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		07866AC8165EE2B400D7BB3A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		07866AA3165EE2B400D7BB3A = {
 			isa = PBXGroup;
 			children = (
-				07866AB8165EE2B400D7BB3A /* Park View */,
+				07866AB8165EE2B400D7BB3A /* Mine Safe */,
 				07866AB1165EE2B400D7BB3A /* Frameworks */,
 				07866AAF165EE2B400D7BB3A /* Products */,
 			);
@@ -112,7 +112,7 @@
 		07866AAF165EE2B400D7BB3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07866AAE165EE2B400D7BB3A /* Park View.app */,
+				07866AAE165EE2B400D7BB3A /* Mine Safe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		07866AB8165EE2B400D7BB3A /* Park View */ = {
+		07866AB8165EE2B400D7BB3A /* Mine Safe */ = {
 			isa = PBXGroup;
 			children = (
 				076BF08F1680459100ACF08A /* Images */,
@@ -143,15 +143,16 @@
 				07866AB9165EE2B400D7BB3A /* Supporting Files */,
 				52D644171A0FFD2600CCA056 /* AppDelegate.swift */,
 			);
+			name = "Mine Safe";
 			path = "Park View";
 			sourceTree = "<group>";
 		};
 		07866AB9165EE2B400D7BB3A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				07866ABA165EE2B400D7BB3A /* Park View-Info.plist */,
+				07866ABA165EE2B400D7BB3A /* Mine Safe-Info.plist */,
 				07866ABB165EE2B400D7BB3A /* InfoPlist.strings */,
-				07866AC0165EE2B400D7BB3A /* Park View-Prefix.pch */,
+				07866AC0165EE2B400D7BB3A /* Mine Safe-Prefix.pch */,
 				07866AC4165EE2B400D7BB3A /* Default.png */,
 				07866AC6165EE2B400D7BB3A /* Default@2x.png */,
 				07866AC8165EE2B400D7BB3A /* Default-568h@2x.png */,
@@ -162,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07866AAD165EE2B400D7BB3A /* Park View */ = {
+		07866AAD165EE2B400D7BB3A /* Mine Safe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07866AEA165EE2B400D7BB3A /* Build configuration list for PBXNativeTarget "Park View" */;
+			buildConfigurationList = 07866AEA165EE2B400D7BB3A /* Build configuration list for PBXNativeTarget "Mine Safe" */;
 			buildPhases = (
 				07866AAA165EE2B400D7BB3A /* Sources */,
 				07866AAB165EE2B400D7BB3A /* Frameworks */,
@@ -174,9 +175,9 @@
 			);
 			dependencies = (
 			);
-			name = "Park View";
+			name = "Mine Safe";
 			productName = "Park View";
-			productReference = 07866AAE165EE2B400D7BB3A /* Park View.app */;
+			productReference = 07866AAE165EE2B400D7BB3A /* Mine Safe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +198,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07866AA8165EE2B400D7BB3A /* Build configuration list for PBXProject "Park View" */;
+			buildConfigurationList = 07866AA8165EE2B400D7BB3A /* Build configuration list for PBXProject "Mine Safe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -209,7 +210,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07866AAD165EE2B400D7BB3A /* Park View */,
+				07866AAD165EE2B400D7BB3A /* Mine Safe */,
 			);
 		};
 /* End PBXProject section */
@@ -322,12 +323,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Park View/Park View-Prefix.pch";
-				INFOPLIST_FILE = "Park View/Park View-Info.plist";
+				GCC_PREFIX_HEADER = "Park View/Mine Safe-Prefix.pch";
+				INFOPLIST_FILE = "Park View/Mine Safe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesignx.MineSafe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mine Safe";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
@@ -341,12 +342,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Park View/Park View-Prefix.pch";
-				INFOPLIST_FILE = "Park View/Park View-Info.plist";
+				GCC_PREFIX_HEADER = "Park View/Mine Safe-Prefix.pch";
+				INFOPLIST_FILE = "Park View/Mine Safe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesignx.MineSafe;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mine Safe";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -355,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07866AA8165EE2B400D7BB3A /* Build configuration list for PBXProject "Park View" */ = {
+		07866AA8165EE2B400D7BB3A /* Build configuration list for PBXProject "Mine Safe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07866AE8165EE2B400D7BB3A /* Debug */,
@@ -364,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07866AEA165EE2B400D7BB3A /* Build configuration list for PBXNativeTarget "Park View" */ = {
+		07866AEA165EE2B400D7BB3A /* Build configuration list for PBXNativeTarget "Mine Safe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07866AEB165EE2B400D7BB3A /* Debug */,

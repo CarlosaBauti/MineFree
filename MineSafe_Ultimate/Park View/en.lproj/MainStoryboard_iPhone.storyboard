@@ -8,7 +8,7 @@
         <!--Park Map View Controller-->
         <scene sceneID="QZh-Ha-k2y">
             <objects>
-                <viewController id="FJL-h2-6xI" customClass="ParkMapViewController" customModule="Park_View" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FJL-h2-6xI" customClass="ParkMapViewController" customModule="Mine_Safe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yqm-V9-xHS"/>
                         <viewControllerLayoutGuide type="bottom" id="fgY-G0-IZK"/>
@@ -23,7 +23,7 @@
                                     <navigationItem id="u0b-XA-3yy">
                                         <nil key="title"/>
                                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="dOn-Vf-gxB">
-                                            <rect key="frame" x="36" y="7" width="230" height="31"/>
+                                            <rect key="frame" x="36" y="6.5" width="230" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="Map"/>
@@ -68,7 +68,7 @@
         <!--Map Options View Controller-->
         <scene sceneID="cON-g2-ZJs">
             <objects>
-                <viewController id="y45-Op-Dvj" customClass="MapOptionsViewController" customModule="Park_View" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y45-Op-Dvj" customClass="MapOptionsViewController" customModule="Mine_Safe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZYW-QY-riV"/>
                         <viewControllerLayoutGuide type="bottom" id="y7Y-ns-zC2"/>
@@ -85,11 +85,11 @@
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pak-vy-Mek" id="Ugv-Xv-CiN">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Option" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2iY-hv-XuT">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -108,7 +108,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-lH-uY4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Select Options" id="Yrc-6B-xq4">
+                                    <navigationItem title="Select Destination" id="Yrc-6B-xq4">
                                         <barButtonItem key="leftBarButtonItem" title="Done" style="done" id="F2y-OZ-Qxd">
                                             <connections>
                                                 <segue destination="Kf1-Ga-vw4" kind="unwind" unwindAction="closeOptions:" id="9Bo-88-HyM"/>
