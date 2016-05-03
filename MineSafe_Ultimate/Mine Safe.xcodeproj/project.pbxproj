@@ -71,14 +71,6 @@
 			name = Annotations;
 			sourceTree = "<group>";
 		};
-		076BF093168045DE00ACF08A /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				07866ACA165EE2B400D7BB3A /* MainStoryboard_iPhone.storyboard */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
 		07866AA3165EE2B400D7BB3A = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +105,9 @@
 			children = (
 				076BF08F1680459100ACF08A /* Images */,
 				076BF091168045BF00ACF08A /* Annotations */,
-				076BF093168045DE00ACF08A /* Storyboards */,
 				52D644151A0FFB7400CCA056 /* ParkMapViewController.swift */,
 				52D644131A0FF9E500CCA056 /* MapOptionsViewController.swift */,
+				07866ACA165EE2B400D7BB3A /* MainStoryboard_iPhone.storyboard */,
 				07866AB9165EE2B400D7BB3A /* Supporting Files */,
 				52D644171A0FFD2600CCA056 /* AppDelegate.swift */,
 			);
@@ -170,7 +162,7 @@
 				ORGANIZATIONNAME = cbautistadesign;
 				TargetAttributes = {
 					07866AAD165EE2B400D7BB3A = {
-						DevelopmentTeam = T3FWTH524Q;
+						DevelopmentTeam = HYA97Z2546;
 					};
 				};
 			};
@@ -301,9 +293,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Park View/Mine Safe-Prefix.pch";
 				INFOPLIST_FILE = "Park View/Mine Safe-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesignx.MineSafe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiegerdesigns.HonoluluArt;
 				PRODUCT_NAME = "Mine Safe";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -320,9 +312,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Park View/Mine Safe-Prefix.pch";
 				INFOPLIST_FILE = "Park View/Mine Safe-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesignx.MineSafe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiegerdesigns.HonoluluArt;
 				PRODUCT_NAME = "Mine Safe";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Park Map View Controller-->
@@ -17,13 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LSo-fr-8xD">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-kK-6fS">
+                                <rect key="frame" x="-4" y="25" width="328" height="29"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.57647058819999997" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="MineSafe">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Optima-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcn-Dt-rxz">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="54" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="u0b-XA-3yy">
                                         <nil key="title"/>
                                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="dOn-Vf-gxB">
-                                            <rect key="frame" x="36" y="6.5" width="230" height="31"/>
+                                            <rect key="frame" x="39" y="6.5" width="230" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="Map"/>
@@ -34,7 +52,7 @@
                                                 <action selector="mapTypeChanged:" destination="FJL-h2-6xI" eventType="valueChanged" id="af0-Fm-6rZ"/>
                                             </connections>
                                         </segmentedControl>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="non-uN-78a">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="non-uN-78a">
                                             <connections>
                                                 <segue destination="y45-Op-Dvj" kind="modal" id="bNt-cZ-5NO"/>
                                             </connections>
@@ -42,15 +60,19 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LSo-fr-8xD">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pcn-Dt-rxz" firstAttribute="trailing" secondItem="85d-Cq-wea" secondAttribute="trailing" id="kGq-IC-JIs"/>
-                            <constraint firstItem="pcn-Dt-rxz" firstAttribute="leading" secondItem="85d-Cq-wea" secondAttribute="leading" id="kdd-Mo-jDZ"/>
-                            <constraint firstItem="pcn-Dt-rxz" firstAttribute="top" secondItem="85d-Cq-wea" secondAttribute="top" id="xhS-MP-nDF"/>
+                            <constraint firstItem="LSo-fr-8xD" firstAttribute="leading" secondItem="pcn-Dt-rxz" secondAttribute="leading" id="CEl-bN-16S"/>
+                            <constraint firstItem="LSo-fr-8xD" firstAttribute="trailing" secondItem="pcn-Dt-rxz" secondAttribute="trailing" id="Et6-nV-0Lc"/>
+                            <constraint firstItem="LSo-fr-8xD" firstAttribute="top" secondItem="yqm-V9-xHS" secondAttribute="bottom" constant="24" id="IA5-wI-2QA"/>
+                            <constraint firstItem="TZC-kK-6fS" firstAttribute="centerX" secondItem="pcn-Dt-rxz" secondAttribute="centerX" id="SS0-ox-VIZ"/>
+                            <constraint firstItem="pcn-Dt-rxz" firstAttribute="top" secondItem="TZC-kK-6fS" secondAttribute="bottom" id="XJX-W1-s5S"/>
+                            <constraint firstAttribute="trailing" secondItem="LSo-fr-8xD" secondAttribute="trailing" id="XQC-DI-a6F"/>
+                            <constraint firstItem="TZC-kK-6fS" firstAttribute="top" secondItem="yqm-V9-xHS" secondAttribute="bottom" constant="5" id="edO-OW-ZGP"/>
+                            <constraint firstItem="TZC-kK-6fS" firstAttribute="leading" secondItem="85d-Cq-wea" secondAttribute="leadingMargin" constant="-20" id="fLf-Sa-tPl"/>
+                            <constraint firstItem="LSo-fr-8xD" firstAttribute="bottom" secondItem="fgY-G0-IZK" secondAttribute="top" id="jcz-fZ-BqG"/>
+                            <constraint firstItem="LSo-fr-8xD" firstAttribute="leading" secondItem="85d-Cq-wea" secondAttribute="leading" id="qYk-0g-CLh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8gk-sc-ytX"/>
