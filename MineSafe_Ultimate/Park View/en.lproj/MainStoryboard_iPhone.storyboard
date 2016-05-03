@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Park Map View Controller-->
@@ -19,40 +18,44 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LSo-fr-8xD">
-                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-kK-6fS">
-                                <rect key="frame" x="-4" y="25" width="328" height="29"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="29"/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.57647058819999997" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="MineSafe">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="24" name="Optima-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="5sN-6T-g4v"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MINE_FREE_WORDS_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="foE-oL-S8n">
+                                <rect key="frame" x="105" y="19" width="110" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="9N0-xE-an7"/>
+                                    <constraint firstAttribute="width" constant="110" id="RnM-Ab-4kl"/>
+                                </constraints>
+                            </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcn-Dt-rxz">
-                                <rect key="frame" x="0.0" y="54" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="49" width="320" height="44"/>
                                 <items>
                                     <navigationItem id="u0b-XA-3yy">
                                         <nil key="title"/>
                                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="dOn-Vf-gxB">
-                                            <rect key="frame" x="39" y="6.5" width="230" height="31"/>
+                                            <rect key="frame" x="39" y="7" width="230" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.035294117649999998" green="0.57647058819999997" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                                             <segments>
                                                 <segment title="Map"/>
-                                                <segment title="Hybrid"/>
-                                                <segment title="Satellite"/>
+                                                <segment title="Danger Zones"/>
                                             </segments>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <action selector="mapTypeChanged:" destination="FJL-h2-6xI" eventType="valueChanged" id="af0-Fm-6rZ"/>
                                             </connections>
                                         </segmentedControl>
                                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="non-uN-78a">
+                                            <color key="tintColor" red="0.035294117649999998" green="0.57647058819999997" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <segue destination="y45-Op-Dvj" kind="modal" id="bNt-cZ-5NO"/>
                                             </connections>
@@ -63,16 +66,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LSo-fr-8xD" firstAttribute="leading" secondItem="pcn-Dt-rxz" secondAttribute="leading" id="CEl-bN-16S"/>
-                            <constraint firstItem="LSo-fr-8xD" firstAttribute="trailing" secondItem="pcn-Dt-rxz" secondAttribute="trailing" id="Et6-nV-0Lc"/>
-                            <constraint firstItem="LSo-fr-8xD" firstAttribute="top" secondItem="yqm-V9-xHS" secondAttribute="bottom" constant="24" id="IA5-wI-2QA"/>
-                            <constraint firstItem="TZC-kK-6fS" firstAttribute="centerX" secondItem="pcn-Dt-rxz" secondAttribute="centerX" id="SS0-ox-VIZ"/>
-                            <constraint firstItem="pcn-Dt-rxz" firstAttribute="top" secondItem="TZC-kK-6fS" secondAttribute="bottom" id="XJX-W1-s5S"/>
-                            <constraint firstAttribute="trailing" secondItem="LSo-fr-8xD" secondAttribute="trailing" id="XQC-DI-a6F"/>
-                            <constraint firstItem="TZC-kK-6fS" firstAttribute="top" secondItem="yqm-V9-xHS" secondAttribute="bottom" constant="5" id="edO-OW-ZGP"/>
-                            <constraint firstItem="TZC-kK-6fS" firstAttribute="leading" secondItem="85d-Cq-wea" secondAttribute="leadingMargin" constant="-20" id="fLf-Sa-tPl"/>
-                            <constraint firstItem="LSo-fr-8xD" firstAttribute="bottom" secondItem="fgY-G0-IZK" secondAttribute="top" id="jcz-fZ-BqG"/>
-                            <constraint firstItem="LSo-fr-8xD" firstAttribute="leading" secondItem="85d-Cq-wea" secondAttribute="leading" id="qYk-0g-CLh"/>
+                            <constraint firstItem="LSo-fr-8xD" firstAttribute="bottom" secondItem="fgY-G0-IZK" secondAttribute="top" id="4NM-M5-Cle"/>
+                            <constraint firstItem="TZC-kK-6fS" firstAttribute="leading" secondItem="85d-Cq-wea" secondAttribute="leading" id="5de-jD-rdn"/>
+                            <constraint firstItem="foE-oL-S8n" firstAttribute="centerX" secondItem="TZC-kK-6fS" secondAttribute="centerX" id="7Jr-ta-e0E"/>
+                            <constraint firstItem="LSo-fr-8xD" firstAttribute="top" secondItem="foE-oL-S8n" secondAttribute="bottom" constant="42" id="EUN-aO-Xvp"/>
+                            <constraint firstAttribute="trailing" secondItem="pcn-Dt-rxz" secondAttribute="trailing" id="K3h-EC-FH6"/>
+                            <constraint firstItem="pcn-Dt-rxz" firstAttribute="leading" secondItem="85d-Cq-wea" secondAttribute="leading" id="NCj-ON-otq"/>
+                            <constraint firstItem="pcn-Dt-rxz" firstAttribute="top" secondItem="TZC-kK-6fS" secondAttribute="bottom" id="Ovd-Uk-bme"/>
+                            <constraint firstItem="TZC-kK-6fS" firstAttribute="top" secondItem="yqm-V9-xHS" secondAttribute="bottom" id="TdZ-NF-Z4N"/>
+                            <constraint firstAttribute="trailing" secondItem="TZC-kK-6fS" secondAttribute="trailing" id="Vgz-gh-FSy"/>
+                            <constraint firstItem="LSo-fr-8xD" firstAttribute="leading" secondItem="pcn-Dt-rxz" secondAttribute="leading" id="kAl-3X-Aeq"/>
+                            <constraint firstItem="foE-oL-S8n" firstAttribute="centerY" secondItem="TZC-kK-6fS" secondAttribute="centerY" id="m9s-aD-6ch"/>
+                            <constraint firstItem="LSo-fr-8xD" firstAttribute="trailing" secondItem="pcn-Dt-rxz" secondAttribute="trailing" id="rQP-Mu-KxY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8gk-sc-ytX"/>
@@ -85,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LwU-tG-gVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="305"/>
+            <point key="canvasLocation" x="767" y="338"/>
         </scene>
         <!--Map Options View Controller-->
         <scene sceneID="cON-g2-ZJs">
@@ -107,11 +112,11 @@
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pak-vy-Mek" id="Ugv-Xv-CiN">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Option" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2iY-hv-XuT">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -129,9 +134,14 @@
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-lH-uY4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="barTintColor" red="0.035294117649999998" green="0.57647058819999997" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Select Destination" id="Yrc-6B-xq4">
                                         <barButtonItem key="leftBarButtonItem" title="Done" style="done" id="F2y-OZ-Qxd">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="Kf1-Ga-vw4" kind="unwind" unwindAction="closeOptions:" id="9Bo-88-HyM"/>
                                             </connections>
@@ -158,4 +168,7 @@
             <point key="canvasLocation" x="1202" y="305"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MINE_FREE_WORDS_1.png" width="816" height="227"/>
+    </resources>
 </document>

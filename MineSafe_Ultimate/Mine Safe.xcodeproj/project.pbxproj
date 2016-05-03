@@ -16,6 +16,7 @@
 		07866AC9165EE2B400D7BB3A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07866AC8165EE2B400D7BB3A /* Default-568h@2x.png */; };
 		07866ACC165EE2B400D7BB3A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07866ACA165EE2B400D7BB3A /* MainStoryboard_iPhone.storyboard */; };
 		07A2E1DF167988AA00355A96 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A2E1DE167988AA00355A96 /* CoreLocation.framework */; };
+		29EE12BB1CD94B1400BCABC2 /* MINE_FREE_WORDS_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 29EE12BA1CD94B1400BCABC2 /* MINE_FREE_WORDS_1.png */; };
 		523931951A16F25E00E62D70 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523931941A16F25E00E62D70 /* MapKit.framework */; };
 		52D644141A0FF9E500CCA056 /* MapOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D644131A0FF9E500CCA056 /* MapOptionsViewController.swift */; };
 		52D644161A0FFB7400CCA056 /* ParkMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D644151A0FFB7400CCA056 /* ParkMapViewController.swift */; };
@@ -35,6 +36,7 @@
 		07866AC8165EE2B400D7BB3A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		07866ACB165EE2B400D7BB3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		07A2E1DE167988AA00355A96 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		29EE12BA1CD94B1400BCABC2 /* MINE_FREE_WORDS_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MINE_FREE_WORDS_1.png; sourceTree = "<group>"; };
 		523931941A16F25E00E62D70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		52D644131A0FF9E500CCA056 /* MapOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOptionsViewController.swift; sourceTree = "<group>"; };
 		52D644151A0FFB7400CCA056 /* ParkMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkMapViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		076BF08F1680459100ACF08A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				29EE12BA1CD94B1400BCABC2 /* MINE_FREE_WORDS_1.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -162,7 +165,7 @@
 				ORGANIZATIONNAME = cbautistadesign;
 				TargetAttributes = {
 					07866AAD165EE2B400D7BB3A = {
-						DevelopmentTeam = HYA97Z2546;
+						DevelopmentTeam = T3FWTH524Q;
 					};
 				};
 			};
@@ -188,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29EE12BB1CD94B1400BCABC2 /* MINE_FREE_WORDS_1.png in Resources */,
 				07866ABD165EE2B400D7BB3A /* InfoPlist.strings in Resources */,
 				07866AC5165EE2B400D7BB3A /* Default.png in Resources */,
 				07866AC7165EE2B400D7BB3A /* Default@2x.png in Resources */,
@@ -254,7 +258,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -276,7 +280,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,10 +299,11 @@
 				INFOPLIST_FILE = "Park View/Mine Safe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hiegerdesigns.HonoluluArt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesign.FirstMapBox;
 				PRODUCT_NAME = "Mine Safe";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -314,9 +319,10 @@
 				INFOPLIST_FILE = "Park View/Mine Safe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hiegerdesigns.HonoluluArt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cbautistadesign.FirstMapBox;
 				PRODUCT_NAME = "Mine Safe";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

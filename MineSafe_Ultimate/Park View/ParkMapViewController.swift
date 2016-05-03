@@ -26,9 +26,8 @@ class ParkMapViewController: UIViewController {
     super.viewDidLoad()
     let location = CLLocationCoordinate2D(
         latitude: 40.660204,
-        longitude: -73.968956
-    )
-    let span = MKCoordinateSpanMake(0.03, 0.03)
+        longitude: -73.968887)
+    let span = MKCoordinateSpanMake(0.025, 0.025)
     let region = MKCoordinateRegion(center: location, span: span)
     mapView.setRegion(region, animated: true)
   }
