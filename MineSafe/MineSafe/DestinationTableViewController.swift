@@ -107,6 +107,13 @@ class DestinationTableViewControler: UITableViewController {
         
         // Add Disclosure Indicator arrow to each table cell.
         
+        // FULL DISCLOSURE: The code used to add the disclosure
+        //                  indicator on the table cell was
+        //                  derived from the Stack Overflow
+        //                  article at the following URL:
+        //
+        // http://stackoverflow.com/questions/27644537/swift-add-disclosure-indicator-to-a-uitableviewcel
+        
         destCell?.accessoryType =
         UITableViewCellAccessoryType.DisclosureIndicator
         
