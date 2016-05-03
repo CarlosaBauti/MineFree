@@ -2,8 +2,8 @@
 //  ParkMapViewController.swift
 //  Park View
 //
-//  Created by Niv Yahel on 2014-11-09.
-//  Copyright (c) 2014 Chris Wagner. All rights reserved.
+//  Created by Carlos Bautista Isaza & Robert Hieger on 2016-05-03.
+//  Copyright (c) 2016 Carlos Bautista. All rights reserved.
 //
 
 import UIKit
@@ -17,10 +17,9 @@ enum MapType: Int {
 
 class ParkMapViewController: UIViewController {
   
-  @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
   
     @IBOutlet var mapView: MKMapView!
-  var selectedOptions = [MapOptionsType]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,12 +37,12 @@ class ParkMapViewController: UIViewController {
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     let optionsViewController = segue.destinationViewController as! MapOptionsViewController
-    optionsViewController.selectedOptions = selectedOptions
+//    optionsViewController.selectedOptions = selectedOptions
   }
   
   @IBAction func closeOptions(exitSegue: UIStoryboardSegue) {
     let optionsViewController = exitSegue.sourceViewController as! MapOptionsViewController
-    selectedOptions = optionsViewController.selectedOptions
+//    selectedOptions = optionsViewController.selectedOptions
     self.loadSelectedOptions()
   }
   

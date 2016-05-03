@@ -2,23 +2,36 @@
 //  MapOptionsViewController.swift
 //  Park View
 //
-//  Created by Niv Yahel on 2014-11-09.
+//  Created by Carlos Bautista Isaza & Robert Hieger on 2016-05-03.
 //  Copyright (c) 2014 Chris Wagner. All rights reserved.
 //
 
 import UIKit
 
-enum MapOptionsType: Int {
-  case MapBoundary = 0
-  case MapOverlay
-  case MapPins
-  case MapCharacterLocation
-  case MapRoute
-}
+//enum destinationType: Int {
+//  case PicnicHouse = 0
+//  case ProspectZoo
+//  case BotanicalGarden
+//  case MapCharacterLocation
+//  case MapRoute
+//}
 
 class MapOptionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-  
-  var selectedOptions = [MapOptionsType]()
+    
+    // MARK: - Properties
+    
+    var destinations = [
+        "The Picnic House",
+        "Prospect Park Zoo",
+        "LeFrak Center at Lakeside",
+        "Prospect Park Baseball Field 7",
+        "Brooklyn Botanical Garden",
+        "Lincoln Road Playground",
+        "Prospect Park Boathouse",
+        "Long Meadow Ballfields",
+        "Prospect Park Dog Beach",
+        "Quaker Cemetery"
+    ]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -36,46 +49,21 @@ class MapOptionsViewController: UIViewController, UITableViewDelegate, UITableVi
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 5
+    return 10
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("OptionCell")
-    let mapOptionsType = MapOptionsType(rawValue: indexPath.row)
-    switch (mapOptionsType!) {
-    case .MapBoundary:
-      cell!.textLabel!.text = "The Picnic House"
-    case .MapOverlay:
-      cell!.textLabel!.text = "Prospect Park Zoo"
-    case .MapPins:
-      cell!.textLabel!.text = "LeFrak Center at Lakeside"
-    case .MapCharacterLocation:
-      cell!.textLabel!.text = "Prospect Park Baseball Field 7"
-    case .MapRoute:
-      cell!.textLabel!.text = "Brooklyn Botanical Garden"
-    }
     
-    if selectedOptions.contains(mapOptionsType!) {
-      cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
-    } else {
-      cell!.accessoryType = UITableViewCellAccessoryType.None
-    }
+    let cell = tableView.dequeueReusableCellWithIdentifier("destinationCell")
     
-    return cell!
-  }
+    for _ in destinations   {
+        
+        cell!.textLabel!.text = destinations[indexPath.row]
+        
+    }   // end for
+    
+        return cell!
+    
+    } // end tableView(_:cellForRowAtIndexPath)
   
-  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let cell = tableView.cellForRowAtIndexPath(indexPath)
-    let mapOptionsType = MapOptionsType(rawValue: indexPath.row)
-    if (cell!.accessoryType == UITableViewCellAccessoryType.Checkmark) {
-      cell!.accessoryType = UITableViewCellAccessoryType.None
-      // delete object
-      selectedOptions = selectedOptions.filter { (currentOption) in currentOption != mapOptionsType}
-    } else {
-      cell!.accessoryType = UITableViewCellAccessoryType.Checkmark
-      selectedOptions += [mapOptionsType!]
-    }
-    
-    tableView.deselectRowAtIndexPath(indexPath, animated: true)
-  }
 }
