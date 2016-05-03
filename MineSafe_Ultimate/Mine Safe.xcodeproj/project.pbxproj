@@ -57,13 +57,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		076BF08D1680457B00ACF08A /* Park Information */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Park Information";
-			sourceTree = "<group>";
-		};
 		076BF08F1680459100ACF08A /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,25 +64,11 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		076BF0901680459E00ACF08A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		076BF091168045BF00ACF08A /* Annotations */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Annotations;
-			sourceTree = "<group>";
-		};
-		076BF092168045C900ACF08A /* Overlays */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Overlays;
 			sourceTree = "<group>";
 		};
 		076BF093168045DE00ACF08A /* Storyboards */ = {
@@ -133,9 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				076BF08F1680459100ACF08A /* Images */,
-				076BF08D1680457B00ACF08A /* Park Information */,
-				076BF0901680459E00ACF08A /* Models */,
-				076BF092168045C900ACF08A /* Overlays */,
 				076BF091168045BF00ACF08A /* Annotations */,
 				076BF093168045DE00ACF08A /* Storyboards */,
 				52D644151A0FFB7400CCA056 /* ParkMapViewController.swift */,
